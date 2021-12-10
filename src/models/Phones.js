@@ -35,7 +35,7 @@ const cell = new Schema({
     code: {
         type: String,
         minLength: 8,
-        maxLength: 8,
+        maxLength: [8, 'Must be 8 characters'],
         unique: true
     }
 })
